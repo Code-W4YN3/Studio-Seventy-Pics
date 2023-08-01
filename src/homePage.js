@@ -12,8 +12,15 @@ function HomePage(){
   return(
     <>
       <div id="landingPhotos">
-        <h1>landing images here</h1>
+        <div id="landing1"></div>
       </div>
+
+      <div id="pageAbout">
+        <h2>This is Seventy-Pics!</h2>
+        <p className="pageParagraphs">We are here to provide you with access to some of the most captivating photos taken by various photographers out there.</p>
+        <p className="pageParagraphs">Looking for inspiration for your next photographs? Feel free to browse through the collection of images displayed below!</p>
+      </div>
+
       <div id="displayPhotos">
         {photos.map((photo ) => (
           <PhotoCard photo={photo} key={photo.id} />

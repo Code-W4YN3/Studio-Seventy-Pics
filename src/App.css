@@ -1,3 +1,16 @@
+#landingPhotos{
+  border-style: outset;
+  border-color: lightgray;
+  background-color: antiquewhite;
+  width: 86.5%;
+  height: 500px;
+  margin-left: 7%;
+}
+
+.pageParagraphs{
+  font-size: large;
+}
+
 #displayPhotos{
   width: 90%;
   margin-left: 5%;
@@ -12,7 +25,7 @@
   margin-top: 2%;
   padding-top: 1%;
   background-color: antiquewhite;
-  border-style: ridge;
+  border-style: outset;
   border-color: lightgray;
 }
 
