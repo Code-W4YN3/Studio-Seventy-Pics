@@ -23,7 +23,7 @@ function BlurPage({ photos, blurPhoto, setBlurPhoto }){
       </div>
       
       <div className="graySpace">
-        <h1 className="grayHeader">Try Lose Focus</h1>
+        <h1 className="blurHeader">Time To Lose Focus</h1>
       </div>
 
       <div className="selectedPhotoDiv">
