@@ -1,21 +1,18 @@
 import PhotoCard from "./photoCard"
-import { useState, useEffect } from "react"
-
-function PhotoPage(){
-  const [ photos, setPhotos ] = useState([])
-  useEffect(()=>{
-    fetch('https://picsum.photos/v2/list')
-    .then((res)=> (res.json()))
-    .then(data => setPhotos(data))
-  }, [])
-    console.log(photos)
-
+function PhotoPage({ photos, selectedPhoto, setSelectedPhoto }){
+  function handleSelectedPhoto(no){
+    setSelectedPhoto(photos[no].download_url)
+  }
+  
   return(
     <>
       <h1>Sample Photos</h1>
+      <div className="selectedPhotoDiv">
+        <a href={selectedPhoto}><img className="selectedPhoto" src={selectedPhoto} alt=" " /></a>
+      </div>
       <div id="displayPhotos">
         {photos.map((photo ) => (
-          <PhotoCard photo={photo} key={photo.id} />
+          <PhotoCard photo={photo} key={photo.id} onSelect={handleSelectedPhoto} />
         ))}
       </div>
     </>
