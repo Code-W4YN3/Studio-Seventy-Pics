@@ -79,6 +79,29 @@
 }
 
 /* PhotoPage styling */
+#photoTitle{
+  font-size: 400%;
+  border-bottom-style: solid;
+  border-bottom-color:  rgb(133, 133, 133);
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
+
+#photoTitle i{
+  color: rgb(207, 158, 94) 
+}
+
+#photoTitle b{
+  color: rgb(14, 115, 148)
+}
+
+#photoH2{
+  color: rgb(14, 115, 148);
+  font-size: 250%;
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
 
 .photoCard{
   width: 31%;
