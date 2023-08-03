@@ -1,10 +1,43 @@
-#landingPhotos{
-  border-style: outset;
-  border-color: lightgray;
+*{
   background-color: antiquewhite;
-  width: 86.5%;
-  height: 500px;
-  margin-left: 7%;
+}
+
+#landingPhotos{
+  background-color: antiquewhite;
+  width: 100%;
+  height: 600px;
+  margin-left: 0%;
+}
+
+.coverPhoto{
+  width: 100%;
+  height: 95%;
+}
+
+#triPhotos{
+  width: 1300px;
+  background: none;
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 0.5%;
+}
+
+.triPhotos{
+  box-shadow: 6px 6px rgb(133, 133, 133);
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  margin-left: 2%;
+  border-top-style: inset;
+  border-top-color: rgb(133, 133, 133);
+}
+
+#pageAbout{
+  position: absolute;
+  top: 125%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .pageParagraphs{
@@ -15,6 +48,16 @@
   width: 90%;
   margin-left: 5%;
   text-align: center;
+}
+
+.filterDivs{
+  display: inline-block;
+  width: 90%;
+}
+
+#filterDivImage{
+  position: relative;
+  left: 50%;
 }
 
 .photoCard{

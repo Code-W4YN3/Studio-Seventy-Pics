@@ -1,11 +1,12 @@
 import './App.css';
 import HomePage from './homePage';
+import PhotoPage from './photoPage';
 
 function App() {
   return (
     <div>
-      <h1>Studio Seventy-Pics</h1>
       <HomePage />
+      {/* <PhotoPage />*/}
     </div>
   );
 }
