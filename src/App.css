@@ -76,6 +76,7 @@
 
 .photoCardDetails{
   display: flex;
+  width: 97%;
 }
 
 .homePhotos{
@@ -89,7 +90,7 @@
 }
 
 .photoCardButton{
-  margin-left: 14.5%;
+  margin-left: auto;
   margin-top: 3%;
   height: 30px;
   width: 100px;
