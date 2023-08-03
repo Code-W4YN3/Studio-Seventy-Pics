@@ -24,17 +24,17 @@ function MyCollection({ photos, onAddPhoto, collectionPhoto, setCollectionPhoto 
 
   return(
     <div id="collectionPage">
-      <h1>My Collection</h1>
+      <h1 id="collectionTitle"><i>My</i> <b>Collection</b></h1>
       <div id="form">
         <h2>Add a Photo</h2>
         <form onSubmit={handleSubmit}>
-          <label>Author:
-            <input key="author" type="text" onChange={e => setAuthor(e.target.value)}></input>
+          <label>Author: 
+            <input className="inputField"  key="author" type="text" onChange={e => setAuthor(e.target.value)}></input>
           </label><br/>
-          <label>Image Url:
-            <input key="image" type="text" onChange={e => setDownload_Url(e.target.value)}></input>
+          <label>Image Url: 
+            <input className="inputField1" key="image" type="text" onChange={e => setDownload_Url(e.target.value)}></input>
           </label><br/>
-          <input type="submit"></input>
+          <input id="formSubmit" type="submit"></input>
         </form>
       </div>
 

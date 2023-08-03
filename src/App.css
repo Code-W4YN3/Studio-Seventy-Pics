@@ -211,3 +211,67 @@
 #collectionPage{
   background-color: white;
 }
+
+#collectionTitle{
+  font-size: 400%;
+  border-bottom-style: solid;
+  border-bottom-color:  rgb(133, 133, 133);
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
+
+#collectionTitle i{
+  color: rgb(207, 158, 94) ;
+}
+
+#collectionTitle b{
+  color: rgb(14, 115, 148);
+}
+
+#form{
+  width: 60%;
+  margin-left: 20%;
+  text-align: justify;
+  font-size: 140%;
+}
+
+#form h2{
+  margin-top: 1%;
+  margin-bottom: 0%;
+  border-bottom-style: solid;
+  border-bottom-color:  rgb(133, 133, 133);
+  color: rgb(207, 158, 94);
+}
+
+.inputField{
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-color:  rgb(133, 133, 133);
+  width: 90.5%;
+}
+
+.inputField1{
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-color:  rgb(133, 133, 133);
+  width: 87%;
+  margin-bottom: 1%;
+}
+
+#formSubmit{
+  width: 100%;
+  height: 30px;
+  font-size: 100%;
+  border-style: none;
+  border-bottom-style: ridge;
+  border-bottom-color: rgb(133, 133, 133) ;
+  border-bottom-width: 3px;
+}
+
+#myPhotos h2{
+  color: rgb(14, 115, 148);
+  font-size: 250%;
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
