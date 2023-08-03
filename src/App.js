@@ -6,12 +6,15 @@ import HomePage from './homePage';
 import PhotoPage from './photoPage';
 import GrayPage from './grayPage';
 import BlurPage from './blurPage';
+import MyCollection from './myCollection';
 
 function App() {
   const [ photos, setPhotos ] = useState([])
   const [ selectedPhoto, setSelectedPhoto ] = useState(``)
   const [ grayPhoto, setGrayPhoto ] = useState(``)
   const [ blurPhoto, setBlurPhoto ] = useState(``)
+  const [ collection, setCollection ] = useState([])
+  const [ collectionPhoto, setCollectionPhoto ] = useState(``)
 
   useEffect(()=>{
     fetch('https://picsum.photos/v2/list')
@@ -24,6 +27,21 @@ function App() {
       setBlurPhoto(data[0].download_url)
     })
   }, [])
+
+  useEffect(()=> {
+    fetch('http://localhost:3000/photos')
+    .then((res)=>(res.json()))
+    .then(data =>{
+      setCollection(data)
+      console.log(data)
+      setCollectionPhoto(data[0].download_url)
+    })
+  }, [])
+
+  function handleAddPhoto(newPhoto){
+    setCollection([...collection, newPhoto])
+  }
+
   return (
     <>
       <Routes>
@@ -31,7 +49,7 @@ function App() {
           <Route path='/photos' element={<PhotoPage photos={photos} selectedPhoto={selectedPhoto} setSelectedPhoto={setSelectedPhoto}/>} />
           <Route path='/grayscale' element={<GrayPage photos={photos} grayPhoto={grayPhoto} setGrayPhoto={setGrayPhoto} />} />
           <Route path='/blur' element={<BlurPage photos={photos} blurPhoto={blurPhoto} setBlurPhoto={setBlurPhoto}/>} />
-          <Route path='/collection' element={<PhotoPage />} />
+          <Route path='/collection' element={<MyCollection photos={collection} setCollection={setCollection} collectionPhoto={collectionPhoto} setCollectionPhoto={setCollectionPhoto} onAddPhoto={handleAddPhoto} />} />
         </Routes>
     </>
   );
