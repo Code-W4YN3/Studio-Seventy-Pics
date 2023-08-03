@@ -18,7 +18,7 @@ function App() {
       setPhotos(data)
       console.log(data)
       setSelectedPhoto(data[0].download_url)
-      setGrayPhoto(`${data[0].download_url}?grayscale`)
+      setGrayPhoto(data[0].download_url)
     })
   }, [])
   return (
