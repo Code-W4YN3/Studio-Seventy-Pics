@@ -11,11 +11,14 @@ function PhotoPage(){
     console.log(photos)
 
   return(
-    <div id="displayPhotos">
-      {photos.map((photo ) => (
-        <PhotoCard photo={photo} key={photo.id} />
-      ))}
-    </div>
+    <>
+      <h1>Sample Photos</h1>
+      <div id="displayPhotos">
+        {photos.map((photo ) => (
+          <PhotoCard photo={photo} key={photo.id} />
+        ))}
+      </div>
+    </>
   )
 }
 
