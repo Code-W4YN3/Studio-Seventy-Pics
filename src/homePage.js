@@ -1,6 +1,11 @@
 function HomePage(){
   return(
-    <>
+    <div id="homePage">
+      <div className="pageH1">
+      <h2 id="grayTitle" className="pageTitles"> Studio</h2>
+        <h1 id="grayTitle2" className="pageTitles2"><i>Seventy-</i><b>Pics</b></h1>
+      </div>
+
       <div id="landingPhotos">
         <img className="coverPhoto" src="./cover.jpg" alt=" " />
       </div>
@@ -23,9 +28,7 @@ function HomePage(){
           <img id="filterDivImage" src="https://picsum.photos/500/300?grayscale" />
         </div>
       </div>
-
-      
-    </>
+    </div>
   )
 }
 

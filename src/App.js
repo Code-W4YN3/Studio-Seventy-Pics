@@ -1,7 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import DefaultNavbar from './navBar';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from './homePage';
 import PhotoPage from './photoPage';
 import GrayPage from './grayPage';
@@ -44,6 +43,13 @@ function App() {
 
   return (
     <>
+      <div id='navBar'>
+        <Link className='navButtons' to={'/'}> Home </Link>
+        <Link className='navButtons' to={'/photos'}> Photos </Link>
+        <Link className='navButtons' to={'/grayscale'}> Grayscale </Link>
+        <Link className='navButtons' to={'/blur'}> Blur </Link>
+        <Link className='navButtons' to={'/collection'}> My Photos </Link>
+      </div>
       <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/photos' element={<PhotoPage photos={photos} selectedPhoto={selectedPhoto} setSelectedPhoto={setSelectedPhoto}/>} />
