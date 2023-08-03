@@ -10,7 +10,7 @@ function PhotoPage({ photos, selectedPhoto, setSelectedPhoto }){
       <div className="selectedPhotoDiv">
         <a href={selectedPhoto}><img className="selectedPhoto" src={selectedPhoto} alt=" " /></a>
       </div>
-      <div id="displayPhotos">
+      <div className="displayPhotos">
         {photos.map((photo ) => (
           <PhotoCard photo={photo} key={photo.id} onSelect={handleSelectedPhoto} />
         ))}

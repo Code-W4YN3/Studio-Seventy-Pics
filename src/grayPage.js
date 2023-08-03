@@ -29,7 +29,7 @@ function GrayPage({ photos, grayPhoto, setGrayPhoto }){
       <div className="selectedPhotoDiv">
         <a href={grayPhoto}><img className="graySelectedPhoto" src={grayPhoto} alt=" " /></a>
       </div>
-      <div id="displayPhotos">
+      <div className="displayPhotos">
         {photos.map((photo ) => (
           <PhotoCard photo={photo} key={photo.id} onSelect={handleGrayPhoto} />
         ))}
