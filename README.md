@@ -15,7 +15,7 @@ This is a photo gallery web application that allows users to view various photos
 ### View live site
 Click the link provided below to access the site in your browser
 
-
+https://studio-seventy-pics-lgsbjf154-wayne-otido.vercel.app/
 
 ### Using the website
 Users are able to:
