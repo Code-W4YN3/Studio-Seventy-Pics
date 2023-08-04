@@ -1,8 +1,16 @@
 #navBar{
+  height: 50px;
+  margin-top: 0;
   margin-bottom: 1%;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  background-color: white;
 }
 
 .navButtons{
+  position: relative;
+  top: 17%;
   font-size: 150%;
   margin-left: 1%;
   margin-right: 1%;
@@ -50,14 +58,32 @@
 }
 
 #pageAbout{
-  position: absolute;
-  top: 125%;
+  position: relative;
+  margin-top: 14%;
   width: 90%;
   margin-left: 5%;
 }
 
+#pageAboutH2{
+  width: 90%;
+  margin-left: 5%;
+  font-size: 300%;
+  border-bottom-style: solid;
+  border-bottom-color:  rgb(133, 133, 133);
+}
+
+#pageAboutH2 i{
+  color: rgb(207, 158, 94);
+}
+
+#pageAboutH2 b{
+  color: rgb(14, 115, 148);
+}
+
 .pageParagraphs{
-  font-size: large;
+  font-size: 140%;
+  margin-left: 10%;
+  width: 80%;
 }
 
 .displayPhotos{
@@ -71,11 +97,53 @@
 .filterDivs{
   display: inline-block;
   width: 90%;
+  margin-left: 5%;
 }
 
 #filterDivImage{
   position: relative;
   left: 50%;
+  margin-top: 2%;
+  border-radius: 10%;
+}
+
+#filterDivText{
+  position: absolute;
+  margin-top: 6%;
+  font-size: 140%;
+  width: 40%;
+}
+
+#filterDivText h2{
+  color: rgb(207, 158, 94);
+}
+
+#filterDivText p{
+  margin-left: 13%;
+}
+
+#filterDivImage2{
+  position: relative;
+  margin-top: 8%;
+  border-radius: 10%;
+}
+
+#filterDivText2{
+  position: absolute;
+  margin-top: 13%;
+  font-size: 140%;
+  width: 40%;
+  right: 0%;
+  text-align: right;
+  margin-right: 10%;
+}
+
+#filterDivText2 h2{
+  color: rgb(14, 115, 148);
+}
+
+#filterDivText2 p{
+  margin-right: 13%;
 }
 
 /* PhotoPage styling */
@@ -88,11 +156,11 @@
 }
 
 #photoTitle i{
-  color: rgb(207, 158, 94) 
+  color: rgb(207, 158, 94); 
 }
 
 #photoTitle b{
-  color: rgb(14, 115, 148)
+  color: rgb(14, 115, 148);
 }
 
 #photoH2{

@@ -17,16 +17,25 @@ function HomePage(){
       </div>
 
       <div id="pageAbout">
-        <h2>This is Seventy-Pics!</h2>
-        <p className="pageParagraphs">We are here to provide you with access to some of the most captivating photos taken by various photographers out there.</p>
-        <p className="pageParagraphs">Looking for inspiration for your next photographs? Feel free to browse through the collection of images displayed below!</p>
+        <h2 id="pageAboutH2">This is <i>Seventy-</i><b>Pics!</b></h2>
+        <p className="pageParagraphs">We are here to provide you with access to some of the most captivating photos taken by various photographers out there. 
+          Looking for inspiration for your next photographs? A new wallpaper? Just looking to explore ?Feel free to browse through the collection of images displayed below!
+           Feel free to try out the filters availed as well and more to come</p>
         <div className="filterDivs">
-        <div id="filterDivText">
-          <h2>Going Gray?</h2>
-          <p>Test out the grayscale filter in the grayscale page!</p>
-        </div>
+          <div id="filterDivText">
+            <h2>Going Gray?</h2>
+            <p>Test out the grayscale filter in the grayscale page!</p>
+          </div>
           <img id="filterDivImage" src="https://picsum.photos/500/300?grayscale" />
         </div>
+        <div className="filterDivs">
+          <div id="filterDivText2">
+            <h2>Say Haze!</h2>
+            <p>Test out the blur filter in the blur filter page!</p>
+          </div>
+          <img id="filterDivImage2" src="https://picsum.photos/500/300?blur=10" />
+        </div>
+        
       </div>
     </div>
   )
