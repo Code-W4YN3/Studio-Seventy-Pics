@@ -24,7 +24,9 @@ function MyCollection({ photos, onAddPhoto, collectionPhoto, setCollectionPhoto 
 
   return(
     <div id="collectionPage">
-      <h1 id="collectionTitle"><i>My</i> <b>Collection</b></h1>
+      <div id="collectionTitleDiv">
+        <h1 id="collectionTitle"><i>My</i> <b>Collection</b></h1>
+      </div>
       <div id="form">
         <h2>Add a Photo</h2>
         <form onSubmit={handleSubmit}>

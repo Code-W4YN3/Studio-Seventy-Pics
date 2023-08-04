@@ -1,3 +1,9 @@
+*{
+  font-family: 'Acme', sans-serif;
+  font-family: 'Edu SA Beginner', cursive;
+  font-family: 'Raleway', sans-serif;
+}
+
 #navBar{
   height: 50px;
   margin-top: 0;
@@ -59,9 +65,10 @@
 
 #pageAbout{
   position: relative;
-  margin-top: 14%;
+  margin-top: 16%;
   width: 90%;
   margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 #pageAboutH2{
@@ -147,12 +154,22 @@
 }
 
 /* PhotoPage styling */
+#photoTitleDiv{
+  position: relative;
+  padding-top: 3%;
+  width: 100%;
+}
+
 #photoTitle{
+  position: fixed;
   font-size: 400%;
   border-bottom-style: solid;
   border-bottom-color:  rgb(133, 133, 133);
   margin-top: 0%;
   margin-bottom: 1%;
+  width: 100%;
+  background-color: white;
+
 }
 
 #photoTitle i{
@@ -167,7 +184,7 @@
   color: rgb(14, 115, 148);
   font-size: 250%;
   margin-left: 10%;
-  margin-top: 1%;
+  margin-top: 7%;
   margin-bottom: 1%;
 }
 
@@ -222,7 +239,7 @@
 
 /* Gray Page */
 #grayPage{
-  background-color: rgb(167, 166, 166);
+  background-color: rgb(214, 214, 214);
   border-color: lightgrey;
 }
 
@@ -315,12 +332,21 @@
   background-color: white;
 }
 
+#collectionTitleDiv{
+  position: relative;
+  padding-top: 3%;
+  width: 100%;
+}
+
 #collectionTitle{
+  position: fixed;
+  background-color: white;
   font-size: 400%;
   border-bottom-style: solid;
   border-bottom-color:  rgb(133, 133, 133);
   margin-top: 0%;
   margin-bottom: 1%;
+  width: 100%;
 }
 
 #collectionTitle i{
@@ -333,6 +359,7 @@
 
 #form{
   width: 60%;
+  padding-top: 6%;
   margin-left: 20%;
   text-align: justify;
   font-size: 140%;
